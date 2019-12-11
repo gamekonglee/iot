@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+ <RelativeLayout
+     android:layout_width="250dp"
+     android:layout_height="150dp"
+     android:layout_gravity="center"
+     android:padding="5dp"
+     android:background="@drawable/bg_corner_white_5">
+     <com.view.CircleImageView
+         android:id="@+id/iv_img"
+         android:background="@drawable/bg_default"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />
+     <TextView
+         android:textColor="#333333"
+         android:text="点击图片进行分享"
+         android:visibility="gone"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+ </RelativeLayout>
+
+</LinearLayout>

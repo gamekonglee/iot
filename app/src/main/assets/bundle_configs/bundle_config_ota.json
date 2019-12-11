@@ -1,0 +1,32 @@
+{
+  "name": "OTA",
+  "description": "包含[待升级固件列表页],[固件升级页]两个子页面",
+  "pages": [
+    {
+      "name": "我的-设置-待升级固件列表",
+      "version": "0.0.1",
+      "needLogin": "true",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/ota/list",
+          "navigationIntentAction": "com.aliyun.iot.aep.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://com.aliyun.iot.ilop/page/ota/list"
+        }
+      ]
+    },
+    {
+      "name": "我的-设置-固件升级",
+      "version": "0.0.1",
+      "needLogin": "true",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/ota",
+          "navigationIntentAction": "com.aliyun.iot.aep.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://com.aliyun.iot.ilop/page/ota"
+        }
+      ]
+    }
+  ]
+}

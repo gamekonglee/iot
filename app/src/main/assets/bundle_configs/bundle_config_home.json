@@ -1,0 +1,136 @@
+{
+  "name": "小智App全部页面",
+  "description": "",
+  "pages": [
+    {
+      "name": "首页",
+      "version": "0.0.1",
+      "needLogin": "false",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/main",
+          "navigationIntentAction": "com.aliyun.iot.aep.demo.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://aliyun.iot.aep.demo/page/main"
+        }
+      ]
+    },
+    {
+      "name": "iLop首页",
+      "version": "0.0.1",
+      "needLogin": "false",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/ilopmain",
+          "navigationIntentAction": "com.aliyun.iot.aep.demo.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://aliyun.iot.aep.demo/page/ilopmain"
+        }
+      ]
+    },
+    {
+      "name": "iLop添加设备页",
+      "version": "0.0.1",
+      "needLogin": "false",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/ilopadddevice",
+          "navigationIntentAction": "com.aliyun.iot.aep.demo.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://aliyun.iot.aep.demo/page/ilopadddevice"
+        }
+      ]
+    },
+    {
+      "name": "iLop设备绑定页",
+      "version": "0.0.1",
+      "needLogin": "false",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/ilopbinddevice",
+          "navigationIntentAction": "com.aliyun.iot.aep.demo.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://aliyun.iot.aep.demo/page/ilopbinddevice"
+        }
+      ]
+    },
+    {
+      "name": "关于页",
+      "version": "0.0.1",
+      "needLogin": "false",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/about",
+          "navigationIntentAction": "com.aliyun.iot.aep.demo.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://aliyun.iot.aep.demo/page/about"
+        }
+      ]
+    },
+    {
+      "name": "二维码扫码页",
+      "version": "0.0.1",
+      "needLogin": "false",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/scan",
+          "navigationIntentAction": "com.aliyun.iot.aep.demo.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://aliyun.iot.aep.demo/page/scan"
+        }
+      ]
+    },
+    {
+      "name": "登录页",
+      "version": "0.0.1",
+      "needLogin": "false",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/login",
+          "navigationIntentAction": "com.aliyun.iot.aep.demo.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://aliyun.iot.aep.demo/page/login"
+        }
+      ]
+    },
+    {
+      "name": "APIClient Demo页",
+      "version": "0.0.1",
+      "needLogin": "false",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/apiClient",
+          "navigationIntentAction": "com.aliyun.iot.aep.demo.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://aliyun.iot.aep.demo/page/apiClient"
+        }
+      ]
+    },
+    {
+      "name": "长链通道Demo页",
+      "version": "0.0.1",
+      "needLogin": "false",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/channel",
+          "navigationIntentAction": "com.aliyun.iot.aep.demo.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://aliyun.iot.aep.demo/page/channel"
+        }
+      ]
+    },
+    {
+      "name": "ALog Demo page",
+      "version": "0.0.1",
+      "needLogin": "false",
+      "navigationConfigures": [
+        {
+          "navigationCode": "page/alog",
+          "navigationIntentAction": "com.aliyun.iot.aep.demo.action.navigation",
+          "navigationIntentCategory": "android.intent.category.DEFAULT",
+          "navigationIntentUrl": "https://aliyun.iot.aep.demo/page/alog"
+        }
+      ]
+    }
+  ]
+}

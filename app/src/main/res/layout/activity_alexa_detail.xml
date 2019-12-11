@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:onClick="goBack">
+        <ImageView
+            android:background="@mipmap/nav_left"
+            android:layout_centerInParent="true"
+            android:layout_width="10dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <TextView
+        android:text="@string/str_use_amazon"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <ImageView
+        android:src="@mipmap/img_amazon"
+        android:scaleType="centerInside"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <View
+        android:background="#dddddd"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="@string/str_step_1"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/str_step_1_detail"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#666666"
+            android:lineSpacingExtra="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="@string/str_step_2"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/str_step_2_detail"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#666666"
+            android:lineSpacingExtra="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="@string/str_step_3"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/str_step_3_detail"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#666666"
+            android:lineSpacingExtra="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="@string/str_step_4"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/str_step_4_detail"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#666666"
+            android:lineSpacingExtra="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

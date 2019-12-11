@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mic_switch_key">mic_switch</string>
+    <string name="speaker_switch_key">speaker_switch</string>
+    <string name="status_light_switch_key">status_light_switch</string>
+    <string name="day_night_mode_key">day_night_mode</string>
+    <string name="stream_video_quality_key">stream_video_quality</string>
+    <string name="subStream_video_quality_key">subStream_video_quality</string>
+    <string name="image_flip_status_key">image_flip_status</string>
+    <string name="encrypt_switch_key">encrypt_switch</string>
+    <string name="force_iframe_key">force_iframe</string>
+
+    <string name="alarm_switch_key">alarm_switch</string>
+    <string name="motion_detect_sensitivity_key">motion_detect_sensitivity</string>
+    <string name="voice_detect_sensitivity_key">voice_detect_sensitivity</string>
+    <string name="alarm_frequency_level_key">alarm_frequency_level</string>
+    <string name="alarm_notify_settings_key">alarm_notify_settings</string>
+
+    <string name="event_record_time_settings_key">event_record_time_settings</string>
+
+
+    <string name="storage_status_key">storage_status</string>
+    <string name="storage_total_capacity_key">storage_total_capacity</string>
+    <string name="storage_remain_capacity_key">storage_remain_capacity</string>
+    <string name="storage_record_mode_key">storage_record_mode</string>
+    <string name="storage_format_key">storage_format</string>
+
+    <string name="unbind_key">unbind</string>
+    <string name="reboot_key">reboot</string>
+
+</resources>

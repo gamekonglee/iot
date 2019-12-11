@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/ipc_video_title_card" />
+
+        <RelativeLayout
+            android:id="@+id/rl_contain_video"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+
+            <com.aliyun.iotx.linkvisual.media.video.views.ZoomableTextureView
+                android:id="@+id/card_player_texture_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ToggleButton
+                android:id="@+id/tbtn_zoom"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:textOn=""
+                android:textOff=""
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/full_screen_button" />
+
+            <ToggleButton
+                android:id="@+id/tbtn_record"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:textOn=""
+                android:textOff=""
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/camera_record" />
+
+            <ToggleButton
+                android:id="@+id/tbtn_capture"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:textOn=""
+                android:textOff=""
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/camera_capture" />
+
+            <ImageView
+                android:id="@+id/iv_pause_resume"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:textOn=""
+                android:textOff=""
+                android:layout_alignTop="@+id/tbtn_zoom"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/ipc_video_btn_pause_resume" />
+
+            <TextView
+                android:id="@+id/tv_duration_cur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_pause_resume"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/iv_pause_resume"
+                android:text="-:-"
+                android:textColor="@android:color/white"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tv_duration_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_duration_cur"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@id/tbtn_zoom"
+                android:text="-:-"
+                android:textColor="@android:color/white"
+                android:textSize="8sp" />
+
+            <SeekBar
+                android:id="@+id/sb_player"
+                style="@style/custom_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_below="@id/tv_duration_cur"
+                android:layout_alignLeft="@id/tv_duration_cur"
+                android:layout_alignRight="@id/tv_duration_all"
+                android:layout_toRightOf="@id/iv_pause_resume"
+                android:thumbOffset="0dip" />
+
+            <ProgressBar
+                android:id="@+id/pb_video_buffering"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminateDuration="1000"
+                android:visibility="gone" />
+
+            <ViewStub
+                android:id="@+id/vs_replay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout="@layout/camera_layout_video_repaly" />
+
+            <ViewStub
+                android:id="@+id/vs_new_seek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout="@layout/camera_layout_video_small_seek" />
+
+            <Button
+                android:id="@+id/tv_no_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#999999"
+                android:gravity="center"
+                android:text="@string/ipc_video_no_video"
+                android:textColor="#cccccc"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_time_control"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="date" />
+
+            <com.aliyun.iot.demo.ipcview.widget.TimeRulerView
+                android:id="@+id/time_rule_view"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#EEEEEE"
+                app:ipc_gradationTextSize="12sp"
+                app:ipc_indicatorLineColor="#7FFF3838"
+                app:ipc_hourLen="30dp"
+                app:ipc_minuteLen="22dp"
+                app:ipc_secondLen="16dp"
+                app:ipc_indicatorLineWidth="1dp"
+                app:ipc_currentTime="0"
+                android:layout_below="@id/tv_date" />
+
+            <TextView
+                android:id="@+id/tv_select_time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_rule_view"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ipc_video_choose_date"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_title_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    tools:text="2018-10-10" />
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@drawable/camera_close" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EDEDED" />
+
+            <com.savvi.rangedatepicker.CalendarPickerView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:clipToPadding="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:scrollbarStyle="outsideOverlay"
+                app:tsquare_dayBackground="@drawable/ipc_video_bg_calendar"
+                app:tsquare_dayTextColor="@drawable/ipc_video_txt_calendar_day_color"
+                app:tsquare_dividerColor="@android:color/transparent"
+                app:tsquare_headerTextColor="#030303" />
+
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/ipc_confirm" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

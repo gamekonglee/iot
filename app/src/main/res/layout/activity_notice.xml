@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f8f8f8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="goBack">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@mipmap/nav_left"
+                android:layout_width="10dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <!--<TextView-->
+            <!--android:text="@string/str_notice"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textColor="#252525"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:background="#ffffff">
+            <TextView
+                android:id="@+id/tv_device"
+                android:text="@string/str_message"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp"
+                android:background="@drawable/shape_bottom_line"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_share"
+                android:text="@string/str_share"
+                android:textColor="@color/theme"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/bg_theme_empty"
+                android:layout_width="112dp"
+                android:layout_height="38dp" />
+            <TextView
+                android:id="@+id/tv_notice"
+                android:textSize="17sp"
+                android:padding="10dp"
+                android:text="@string/str_notice_2"
+                android:textColor="#666666"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.view.PMSwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.view.EndOfListView
+            android:id="@+id/lv_devices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.view.PMSwipeRefreshLayout>
+
+    <com.view.TextViewPlus
+        android:id="@+id/tv_no_notice"
+        android:drawableTop="@mipmap/icon_wxx"
+        android:text="@string/str_no_notice"
+        android:gravity="center_horizontal"
+        android:paddingTop="200dp"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        app:top_width="70dp"
+        app:top_height="76dp"
+        android:layout_width="match_parent"
+        android:drawablePadding="10dp"
+        android:layout_height="400dp" />
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f8f8f8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <RelativeLayout
+        android:onClick="goBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:background="@mipmap/nav_left"
+            android:layout_width="10dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <TextView
+        android:text="@string/str_about"
+        android:textColor="#252525"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <com.view.TextViewPlus
+        android:id="@+id/tv_version"
+        android:text=""
+        android:drawablePadding="10dp"
+        android:textSize="13sp"
+        android:textColor="#999999"
+        android:drawableTop="@mipmap/img_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="60dp"
+        app:top_width="90dp"
+        app:top_height="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_pingfen"
+            android:text="@string/str_pingfen"
+            android:textColor="#252525"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@mipmap/my_icon_right"
+            android:paddingRight="15dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    <RelativeLayout
+        android:id="@+id/tv_update"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="@string/str_update_version"
+            android:textColor="#252525"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/tv_last_version"
+            android:text=""
+            android:drawablePadding="5dp"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:drawableRight="@mipmap/my_icon_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_version_tips"
+            android:visibility="gone"
+            android:text="@string/str_new_version"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_corner_full_red_2"
+            android:padding="2dp"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="85dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_privacy"
+        android:text="@string/str_privacy"
+        android:textColor="#252525"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:drawableRight="@mipmap/my_icon_right"
+        android:paddingRight="15dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_privacy_2"
+        android:text="@string/str_agreement"
+        android:textColor="#252525"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:drawableRight="@mipmap/my_icon_right"
+        android:paddingRight="15dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="180dp"
+    >
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_scale"
+        android:background="@mipmap/nav_icon_sys"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+    <RelativeLayout
+        android:id="@+id/rl_user_center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp">
+        <com.view.CircleImageView
+            app:type="1"
+            android:id="@+id/iv_head"
+            android:src="@mipmap/img_tx"
+            android:layout_marginLeft="15dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/tv_click_to_setnick"
+            android:text="@string/str_click_to_set_nickname"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="86-000****0000"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/my_icon_right"
+            android:layout_width="6dp"
+            android:layout_height="12dp" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_corner_white_8_top">
+            <com.view.TextViewPlus
+                android:id="@+id/tv_component"
+                android:text="@string/str_small_component"
+                android:visibility="gone"
+                android:drawableLeft="@mipmap/icon_xzj"
+                style="@style/tv_mine"/>
+
+        <View
+            android:background="#f8f8f8"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <com.view.TextViewPlus
+            android:id="@+id/tv_share"
+            android:text="@string/str_share"
+            android:drawableLeft="@mipmap/icon_share"
+            style="@style/tv_mine"/>
+        <View
+            android:background="#f8f8f8"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <com.view.TextViewPlus
+            android:id="@+id/tv_notice"
+            android:text="@string/str_notice"
+            android:drawableLeft="@mipmap/icon_xx"
+            style="@style/tv_mine"/>
+
+        <com.view.TextViewPlus
+            android:id="@+id/tv_3th"
+            android:text="@string/str_thirth"
+            android:drawableLeft="@mipmap/icon_service"
+            style="@style/tv_mine"/>
+        <com.view.TextViewPlus
+            android:id="@+id/tv_change_version"
+            android:text="@string/str_change_version"
+            app:left_width="15dp"
+            app:left_height="15dp"
+            android:drawableLeft="@mipmap/icon_national"
+            style="@style/tv_mine"/>
+        <com.view.TextViewPlus
+            android:id="@+id/tv_suggestion"
+            android:text="@string/str_suggestion"
+            android:drawableLeft="@mipmap/icon_yjfk"
+            style="@style/tv_mine"/>
+
+        <View
+            android:background="#f8f8f8"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <com.view.TextViewPlus
+            android:id="@+id/tv_setting"
+            android:text="@string/str_setting"
+            android:drawableLeft="@mipmap/icon_sz"
+            style="@style/tv_mine"/>
+        <com.view.TextViewPlus
+            android:id="@+id/tv_about"
+            android:text="@string/about"
+            android:visibility="gone"
+            android:drawableLeft="@mipmap/icon_about"
+            style="@style/tv_mine"/>
+    </LinearLayout>
+    <View
+        android:background="#f8f8f8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/up_left_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ptz_btn_bg"
+            android:text="@string/ipc_main_ptz_left_up"
+            android:textColor="@color/color_white"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/up_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ptz_btn_bg"
+            android:text="@string/ipc_main_ptz_up"
+            android:textColor="@color/color_white"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/up_right_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ptz_btn_bg"
+            android:text="@string/ipc_main_ptz_right_up"
+            android:textColor="@color/color_white"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/left_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ptz_btn_bg"
+            android:text="@string/ipc_main_ptz_left"
+            android:textColor="@color/color_white"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ptz_btn_bg"
+            android:text="@string/ipc_main_ptz_stop"
+            android:textColor="@color/color_white"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/right_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ptz_btn_bg"
+            android:text="@string/ipc_main_ptz_right"
+            android:textColor="@color/color_white"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/down_left_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ptz_btn_bg"
+            android:text="@string/ipc_main_ptz_left_down"
+            android:textColor="@color/color_white"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/down_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ptz_btn_bg"
+            android:text="@string/ipc_main_ptz_down"
+            android:textColor="@color/color_white"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/down_right_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ptz_btn_bg"
+            android:text="@string/ipc_main_ptz_right_down"
+            android:textColor="@color/color_white"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+</LinearLayout>

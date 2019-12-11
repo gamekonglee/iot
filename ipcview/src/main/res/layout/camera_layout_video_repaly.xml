@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_replay"
+    style="@style/video_repaly">
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ipc_replay" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ipc_video_replay"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"/>
+
+</LinearLayout>

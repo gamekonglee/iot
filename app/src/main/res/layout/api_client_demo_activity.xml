@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.aliyun.iot.ilop.demo.page.apiclient.APIClientDemoActivity">
+
+    <include layout="@layout/topbar_layout_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#EFEEF1" />
+
+            <EditText
+                android:id="@+id/api_client_demo_host_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@null"
+                android:textColor="@android:color/black"
+                android:textColorHint="#999999"
+                android:textSize="14dp"
+                android:hint="@string/api_client_demo_host_hint" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EFEEF1" />
+
+            <EditText
+                android:id="@+id/api_client_demo_path_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@null"
+                android:textColor="@android:color/black"
+                android:textColorHint="#999999"
+                android:textSize="14dp"
+                android:hint="@string/api_client_demo_path_hint" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EFEEF1" />
+
+            <EditText
+                android:id="@+id/api_client_demo_api_version_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@null"
+                android:textColor="@android:color/black"
+                android:textColorHint="#999999"
+                android:textSize="14dp"
+                android:hint="@string/api_client_demo_api_verion_hint" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:background="#EFEEF1"
+                android:textColor="#9B9B9B"
+                android:textSize="12dp"
+                android:gravity="center|left"
+                android:text="@string/api_client_demo_params_text" />
+
+            <EditText
+                android:id="@+id/api_client_demo_params_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#999999"
+                android:textSize="16dp"
+                android:gravity="left|top"
+                android:background="@null"
+                android:hint="@string/api_client_demo_params_hint"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:background="#EFEEF1"
+                android:textColor="#9B9B9B"
+                android:textSize="12dp"
+                android:gravity="center|left"
+                android:text="@string/api_client_demo_scheme_hint" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/api_client_demo_scheme_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/api_client_demo_scheme_https_radiobutton"
+                        android:layout_width="20dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="11dp"
+                        android:checked="true"
+                        android:button="@drawable/api_client_demo_radiobutton" />
+
+                    <RadioButton
+                        android:id="@+id/api_client_demo_scheme_http_radiobutton"
+                        android:layout_width="20dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="11dp"
+                        android:button="@drawable/api_client_demo_radiobutton" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:onClick="switchHttps"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:textColor="#333333"
+                        android:textSize="16dp"
+                        android:text="@string/api_client_demo_scheme_https_hint" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:onClick="switchHttp"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:textColor="#333333"
+                        android:textSize="16dp"
+                        android:text="@string/api_client_demo_scheme_http_hint" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="#EFEFEF" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:background="#EFEEF1"
+                android:textColor="#9B9B9B"
+                android:textSize="12dp"
+                android:gravity="center|left"
+                android:text="@string/api_client_demo_language_hint" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/api_client_demo_language_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/api_client_demo_language_cn_radiobutton"
+                        android:layout_width="20dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="11dp"
+                        android:checked="true"
+                        android:button="@drawable/api_client_demo_radiobutton" />
+
+                    <RadioButton
+                        android:id="@+id/api_client_demo_language_en_radiobutton"
+                        android:layout_width="20dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="11dp"
+                        android:button="@drawable/api_client_demo_radiobutton" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:onClick="switchZh"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:textColor="#333333"
+                        android:textSize="16dp"
+                        android:text="@string/api_client_demo_language_zh_hint" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:onClick="switchEn"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:textColor="#333333"
+                        android:textSize="16dp"
+                        android:text="@string/api_client_demo_lanuage_en_hint" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="#EFEFEF" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEEF1">
+
+                <Button
+                    android:id="@+id/api_client_demo_test_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/api_client_button"
+                    android:onClick="testAPI"
+                    android:text="@string/api_client_demo_test_button"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="125dp"
+    android:background="@mipmap/bg_pop_home_list"
+    android:layout_height="95dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_grid"
+            android:layout_marginLeft="15dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/tv_grid"
+            android:textSize="14sp"
+            android:text="@string/icon_grid_type"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+     
+        <!--<com.view.TextViewPlus-->
+            <!--android:id="@+id/tv_grid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:text="@string/icon_grid_type"-->
+            <!--android:textColor="#333333"-->
+            <!--android:textSize="14sp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+
+    <View
+        android:background="#e4e4e4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_dev_sort"
+            android:layout_marginLeft="15dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    <com.view.FontIconView
+        android:id="@+id/tv_list"
+        android:textSize="14sp"
+        android:text="@string/icon_list_type"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_height="match_parent"
+        />
+    </LinearLayout>
+    <!--<com.view.TextViewPlus-->
+        <!--android:id="@+id/tv_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="设备排序"-->
+        <!--android:textColor="#333333"-->
+        <!--android:textSize="14sp"-->
+        <!--android:gravity="center"-->
+        <!--android:drawableLeft="@mipmap/icon_pop_list_type_2"-->
+        <!--app:left_width="22dp"-->
+        <!--app:left_height="22dp"-->
+        <!--android:padding="15dp"-->
+        <!--/>-->
+</LinearLayout>

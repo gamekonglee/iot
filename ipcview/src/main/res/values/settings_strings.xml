@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="camera_switch_title">摄像机开关</string>
+    <string name="privacy_switch_title">隐私遮蔽开关</string>
+
+    <string name="video_voice_title">图像和声音</string>
+    <string name="mic_switch_title">麦克风开关</string>
+    <string name="speaker_switch_title">扬声器开关</string>
+    <string name="status_light_switch_title">状态灯开关</string>
+    <string name="day_night_mode_title">日夜模式</string>
+    <string name="day_night_mode_sum">切换摄像机的白天黑夜模式</string>
+    <string name="stream_video_quality_title">主码流视频质量</string>
+    <string name="stream_video_quality_sum">切换主码流视频质量</string>
+    <string name="subStream_video_quality_title">辅码流视频质量</string>
+    <string name="subStream_video_quality_sum">切换辅码流视频质量</string>
+    <string name="image_flip_status_title">图像翻转</string>
+    <string name="encrypt_switch_title">视频加密开关</string>
+    <string name="force_iframe_title">强制I帧开关</string>
+
+    <string name="alarm_title">报警设置</string>
+    <string name="alarm_switch_title">报警开关</string>
+    <string name="auto_tracking_switch_title">自动跟踪开关</string>
+    <string name="motion_detect_sensitivity_title">移动侦测灵敏度</string>
+    <string name="motion_detect_sensitivity_sum">切换移动侦测灵敏度</string>
+    <string name="voice_detect_sensitivity_title">声音侦测灵敏度</string>
+    <string name="voice_detect_sensitivity_sum">切换声音侦测灵敏度</string>
+    <string name="alarm_frequency_level_title">报警频率</string>
+    <string name="alarm_frequency_level_sum">切换报警频率</string>
+    <string name="alarm_notify_setting_title">报警提醒时段</string>
+    <string name="alarm_notify_setting_sum">设置报警提醒时段</string>
+    <string name="event_record_time_setting_title">报警录像时段</string>
+    <string name="event_record_time_setting_sum">设置报警录像时段</string>
+
+    <string name="card_title">存储卡</string>
+    <string name="storage_status_title">存储卡状态</string>
+    <string name="storage_total_capacity_title">存储卡总存储容量</string>
+    <string name="storage_remaining_capacity_title">存储卡剩余存储容量</string>
+    <string name="storage_record_mode_title">存储卡录制模式</string>
+    <string name="storage_record_mode_sum">切换存储卡录制模式</string>
+    <string name="storage_format_title">格式化存储卡</string>
+    <string name="storage_format_sum">将存储卡进行初始化</string>
+
+    <string name="unbind_title">解绑设备</string>
+    <string name="reboot_title">重启设备</string>
+
+
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EFEFEF"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/about_topbar_view"
+        layout="@layout/topbar_layout_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <View
+            android:layout_width="214dp"
+            android:layout_height="66dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/aliyun_about_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/About_Info_TextView"
+            android:text="AppKey" />
+
+        <TextView
+            android:id="@+id/about_appkey_textview"
+            style="@style/About_Info_Value_TextView" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="21dp"
+            android:background="@color/color_EFEFEF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/About_Info_TextView"
+            android:text="ClientID" />
+
+        <TextView
+            android:id="@+id/about_traceid_textview"
+            style="@style/About_Info_Value_TextView"
+            android:maxLines="2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="21dp"
+            android:background="@color/color_EFEFEF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/About_Info_TextView"
+            android:text="DeviceID" />
+
+        <TextView
+            android:id="@+id/about_deviceid_textview"
+            style="@style/About_Info_Value_TextView" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/About_Info_TextView"
+            android:text="当前版本" />
+
+        <TextView
+            android:id="@+id/about_version_textview"
+            style="@style/About_Info_Value_TextView" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="21dp"
+            android:background="@color/color_EFEFEF" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/about_version_notice_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/About_Info_Value_TextView"
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/About_Info_TextView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="22dp"
+            android:text="版权声明" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/about_copyright_en_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/about_copyright_en"
+        android:textColor="@color/color_555555"
+        android:textSize="14dp" />
+
+</LinearLayout>

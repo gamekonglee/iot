@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#1e1f24"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/rl_top"
+android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+<RelativeLayout
+    android:layout_width="50dp"
+    android:layout_height="match_parent"
+    android:onClick="goBack">
+    <ImageView
+        android:layout_centerInParent="true"
+        android:background="@mipmap/fh"
+        android:layout_width="10dp"
+        android:layout_height="20dp" />
+
+</RelativeLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:background="@mipmap/icon_setting"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.aliyun.iotx.linkvisual.media.video.views.ZoomableTextureView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_stream_quailty"
+            android:text="高清"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_corner_cc1e1f24_2"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/iv_shengyin"
+        android:background="@mipmap/icon_sy"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/iv_luxiang"
+        android:background="@mipmap/icon_lx_nor"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/iv_yuyin"
+            android:background="@mipmap/icon_th_nor"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/iv_jietu"
+            android:background="@mipmap/icon_jt_nor"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/iv_suofang"
+            android:background="@mipmap/icon_fd"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_control"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_control"
+        >
+        <com.view.FreeView
+            android:id="@+id/freeview"
+            android:background="@drawable/shape_blue_corner"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:background="@mipmap/icon_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_width="12dp"
+            android:layout_height="9dp" />
+        <ImageView
+            android:background="@mipmap/icon_left"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="9dp"
+            android:layout_height="12dp" />
+        <ImageView
+            android:background="@mipmap/icon_right"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="9dp"
+            android:layout_height="12dp" />
+        <ImageView
+            android:background="@mipmap/icon_down"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_width="12dp"
+            android:layout_height="9dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+    <com.view.TextViewPlus
+        android:id="@+id/tv_pic"
+        app:top_width="48dp"
+        app:top_height="34dp"
+        android:drawableTop="@mipmap/icon_tk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图库"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        />
+        <com.view.TextViewPlus
+            android:id="@+id/tv_klx"
+            app:top_width="48dp"
+            app:top_height="34dp"
+            android:drawableTop="@mipmap/icon_klx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卡录像"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_marginLeft="60dp"
+            />
+        <com.view.TextViewPlus
+            app:top_width="48dp"
+            android:visibility="gone"
+            app:top_height="34dp"
+            android:drawableTop="@mipmap/icon_ycc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备分享"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_marginLeft="60dp"
+            />
+    </LinearLayout>
+</LinearLayout>

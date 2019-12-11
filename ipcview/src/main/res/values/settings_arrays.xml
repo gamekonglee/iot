@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="MotionDetectSensitivity">
+        <item>关闭</item>
+        <item>最低灵敏度</item>
+        <item>低灵敏度</item>
+        <item>中灵敏度</item>
+        <item>高灵敏度</item>
+        <item>最高灵敏度</item>
+    </string-array>
+    <string-array name="MotionDetectSensitivityValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="VoiceDetectionSensitivity">
+        <item>关闭</item>
+        <item>最低灵敏度</item>
+        <item>低灵敏度</item>
+        <item>中灵敏度</item>
+        <item>高灵敏度</item>
+        <item>最高灵敏度</item>
+    </string-array>
+    <string-array name="VoiceDetectionSensitivityValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="StreamVideoQuality">
+        <item>流畅</item>
+        <item>标清</item>
+        <item>高清</item>
+    </string-array>
+    <string-array name="StreamVideoQualityValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+    <string-array name="SubStreamVideoQuality">
+        <item>流畅</item>
+        <item>标清</item>
+        <item>高清</item>
+    </string-array>
+    <string-array name="SubStreamVideoQualityValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="AlarmFrequencyLevel">
+        <item>低频</item>
+        <item>中频</item>
+        <item>高频</item>
+    </string-array>
+    <string-array name="AlarmFrequencyLevelValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="StorageRecordMode">
+        <item>不录像</item>
+        <item>事件录像</item>
+        <item>全天录像</item>
+    </string-array>
+    <string-array name="StorageRecordModeValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="StorageStatus">
+        <item>未插卡</item>
+        <item>状态正常</item>
+        <item>未格式化</item>
+        <item>正在格式化</item>
+    </string-array>
+    <string-array name="StorageStatusValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="DayNightMode">
+        <item>日间模式</item>
+        <item>夜间模式</item>
+        <item>自动</item>
+    </string-array>
+    <string-array name="DayNightModeValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="ImageFlipState">
+        <item>正常</item>
+        <item>翻转</item>
+    </string-array>
+    <string-array name="ImageFlipStateValue">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>

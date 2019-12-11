@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="295dp"
+    android:background="@mipmap/img_gx"
+    android:layout_height="390dp"
+    android:layout_gravity="center">
+    <ScrollView
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_content"
+                android:text="行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:lineSpacingExtra="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:text="@string/str_wait"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/bg_corner_cccccc_5"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_width="120dp"
+        android:layout_height="45dp" />
+    <TextView
+        android:id="@+id/tv_update"
+        android:text="@string/str_update_now"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/bg_corner_full_orange_5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:layout_width="120dp"
+        android:layout_height="45dp" />
+</RelativeLayout>

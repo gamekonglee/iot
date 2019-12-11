@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_stream_quailty_0"
+        android:text="流畅"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:background="@drawable/bg_corner_cc1e1f24_2"
+        android:layout_width="50dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/tv_stream_quailty_1"
+        android:text="标清"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:background="@drawable/bg_corner_cc1e1f24_2"
+        android:layout_width="50dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/tv_stream_quailty_2"
+        android:text="高清"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:background="@drawable/bg_corner_cc1e1f24_2"
+        android:layout_width="50dp"
+        android:layout_height="30dp" />
+</LinearLayout>

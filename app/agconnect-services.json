@@ -1,0 +1,11 @@
+{
+	"client":{
+		"cp_id":"890086000102166819",
+		"product_id":"9105163812218557411",
+		"client_id":"214983227511669952",
+		"client_secret":"88E9A848A3333605A88CF83BC701215B052466BA44A7D2B920F96E9AE433A6E1",
+		"app_id":"100663653",
+		"package_name":"com.juhao.home"
+	},
+	"configuration_version":"1.0"
+}

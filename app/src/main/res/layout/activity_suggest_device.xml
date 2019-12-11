@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:onClick="goBack">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:background="@mipmap/nav_left"
+            android:layout_width="10dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <TextView
+        android:text="@string/str_input_suggest_info"
+        android:textSize="17sp"
+        android:textColor="#252525"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+    <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <TextView
+        android:text="@string/str_device_suggest"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_suggestion"
+        android:textSize="16sp"
+        android:textColorHint="#cccccc"
+        android:textColor="#666666"
+        android:hint="@string/str_suggest_tips"
+        android:background="@null"
+        android:gravity="top|left"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:maxLength="200"
+        android:layout_height="110dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_device_select"
+            android:text="@string/str_choose_device"
+            android:textColor="#999999"
+            android:textSize="13sp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_corner_999999_10"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_input_count"
+            android:text="0/200"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:text="@string/str_upload_pic"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:id="@+id/ll_img"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+        <TextView
+            android:id="@+id/tv_add_img"
+            android:text="+"
+            android:textColor="#999999"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:background="#f4f4f4"
+            android:layout_width="85dp"
+            android:layout_height="85dp" />
+    </LinearLayout>
+    <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <TextView
+            android:text="@string/str_connect_type"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_mobile"
+            android:textSize="15sp"
+            android:textColorHint="#cccccc"
+            android:textColor="#666666"
+            android:background="@null"
+            android:inputType="number"
+            android:layout_marginLeft="115dp"
+            android:hint="@string/str_phone_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_submit"
+        android:enabled="false"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:text="@string/str_submit"
+        android:background="@drawable/btn_cccccc_theme_selector"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_marginBottom="50dp"
+        android:layout_height="45dp" />
+</LinearLayout>
+</ScrollView>

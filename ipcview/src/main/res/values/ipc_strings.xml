@@ -1,0 +1,5 @@
+<resources>
+    <string name="btn_footer_more">点击获取更多</string>
+    <string name="btn_footer_loading">加载中</string>
+
+</resources>

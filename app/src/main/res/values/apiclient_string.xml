@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_client_demo_title">API网关调试</string>
+
+    <string name="api_client_demo_menu">填充测试数据</string>
+
+    <string name="api_client_demo_host_hint">请输入host</string>
+    <string name="api_client_demo_path_hint">请输入path</string>
+    <string name="api_client_demo_api_verion_hint">请输入apiVersion</string>
+    <string name="api_client_demo_api_verion_default">1.0.0</string>
+    <string name="api_client_demo_params_text">输入参数</string>
+    <string name="api_client_demo_params_hint">请输入JSON格式参数</string>
+
+    <string name="api_client_demo_test_button">发送请求</string>
+
+    <string name="api_client_demo_error_empty_path">path不能为空</string>
+    <string name="api_client_demo_error_empty_api_version">apiVersion不能为空</string>
+    <string name="api_client_demo_error_invalid_json_format">参数不是有效的JSON格式</string>
+
+    <string name="api_client_demo_scheme_hint">Scheme</string>
+    <string name="api_client_demo_scheme_https_hint">Https</string>
+    <string name="api_client_demo_scheme_http_hint">Http</string>
+
+    <string name="api_client_demo_language_hint">语言设置</string>
+    <string name="api_client_demo_language_zh_hint">中文</string>
+    <string name="api_client_demo_lanuage_en_hint">英文</string>
+
+    <string name="api_client_demo_result_title">返回值</string>
+    <string name="api_client_demo_result_copy_button">复制数据</string>
+
+    <string name="api_client_demo_result_copy_done">数据已经复制到粘贴板</string>
+
+</resources>

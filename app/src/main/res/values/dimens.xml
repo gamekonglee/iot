@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spot_size">6dp</dimen>
+    <dimen name="progress_width">250dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_normal">10dip</dimen>
+    <dimen name="margin_default">20dip</dimen>
+    <dimen name="margin_big">40dip</dimen>
+    <dimen name="padding_normal">4dip</dimen>
+    <dimen name="padding_default">8dip</dimen>
+    <dimen name="txt_smaller">10sp</dimen>
+    <dimen name="txt_small">12sp</dimen>
+    <dimen name="txt_default">14sp</dimen>
+    <dimen name="txt_medium">16sp</dimen>
+    <dimen name="txt_big">18sp</dimen>
+    <dimen name="txt_talk">15sp</dimen>
+    <dimen name="txt_padding">18sp</dimen>
+    <dimen name="edit_height">50dip</dimen>
+    <dimen name="edit_four_left">72dip</dimen>
+    <dimen name="edit_five_left">110dip</dimen>
+
+    <dimen name="title_margin">10dp</dimen>
+    <dimen name="progress_margin">24dp</dimen>
+
+    <dimen name="font_larger">22sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_normal">15sp</dimen>
+    <dimen name="font_smaller">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+
+    <!-- typical spacing between two views -->
+    <dimen name="spacing_huge">40dp</dimen>
+    <dimen name="spacing_larger">34dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_biger">20dp</dimen>
+    <dimen name="spacing_big">18dp</dimen>
+    <dimen name="spacing_normal">15dp</dimen>
+    <dimen name="spacing_small">12dp</dimen>
+    <dimen name="spacing_smaller">10dp</dimen>
+    <dimen name="spacing_smallest">8dp</dimen>
+    <dimen name="spacing_tiny">6dp</dimen>
+    <dimen name="spacing_tinyer">4dp</dimen>
+    <dimen name="spacing_tinyest">2dp</dimen>
+
+    <!--uCrop Activity-->
+    <dimen name="ucrop_padding_crop_frame">16dp</dimen>
+    <dimen name="ucrop_size_dot_scale_text_view">8dp</dimen>
+    <dimen name="ucrop_height_horizontal_wheel_progress_line">20dp</dimen>
+    <dimen name="ucrop_width_horizontal_wheel_progress_line">2dp</dimen>
+    <dimen name="ucrop_margin_horizontal_wheel_progress_line">10dp</dimen>
+    <dimen name="ucrop_height_wrapper_controls">64dp</dimen>
+    <dimen name="ucrop_height_wrapper_states">72dp</dimen>
+    <dimen name="ucrop_height_divider_shadow">3dp</dimen>
+    <dimen name="ucrop_text_size_widget_text">13sp</dimen>
+    <dimen name="ucrop_margit_top_widget_text">10sp</dimen>
+    <dimen name="ucrop_size_wrapper_rotate_button">50dp</dimen>
+    <dimen name="ucrop_height_crop_aspect_ratio_text">40dp</dimen>
+
+    <!--Crop View-->
+    <dimen name="ucrop_default_crop_grid_stoke_width">1dp</dimen>
+    <dimen name="ucrop_default_crop_frame_stoke_width">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="index_left_icon_size">28dp</dimen>
+    <dimen name="xx10">10dp</dimen>
+    <dimen name="scanner_view_corner_width">14dp</dimen>
+    <dimen name="scanner_view_corner_thick">4dp</dimen>
+    <dimen name="scanner_view_focus_line_thick">1dp</dimen>
+    <dimen name="scanner_view_tip_top">28dp</dimen>
+    <dimen name="scanner_view_tip_size">14sp</dimen>
+
+</resources>

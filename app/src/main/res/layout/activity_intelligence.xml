@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"/>
+    <View
+        android:background="#cccccc"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true">
+        <!--首页-->
+        <LinearLayout
+            android:id="@+id/frag_top_ll"
+            style="@style/bottom_ll_style"
+            android:onClick="onTabClicked">
+
+            <ImageView
+                android:id="@+id/frag_top_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/top_bot_bar_wise"
+                />
+
+            <TextView
+                android:id="@+id/frag_top_tv"
+                style="@style/bottom_text_style"
+                android:text="我的家" />
+        </LinearLayout>
+        <!--产品-->
+        <LinearLayout
+            android:id="@+id/frag_product_ll"
+            style="@style/bottom_ll_style"
+            android:onClick="onTabClicked">
+
+            <ImageView
+                android:id="@+id/frag_product_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/product_bot_bar_intelligent" />
+
+            <TextView
+                android:id="@+id/frag_product_tv"
+                style="@style/bottom_text_style"
+                android:text="智能" />
+        </LinearLayout>
+        <!--我的-->
+        <LinearLayout
+            android:id="@+id/frag_mine_ll"
+            style="@style/bottom_ll_style"
+            android:onClick="onTabClicked">
+            <ImageView
+                android:id="@+id/frag_mine_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/mine_bot_bar_wise" />
+            <TextView
+                android:id="@+id/frag_mine_tv"
+                style="@style/bottom_text_style"
+                android:text="个人中心" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

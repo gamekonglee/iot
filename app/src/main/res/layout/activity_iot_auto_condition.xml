@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:onClick="goBack">
+            <ImageView
+                android:background="@mipmap/nav_left"
+                android:layout_centerInParent="true"
+                android:layout_width="10dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <TextView
+            android:text="@string/str_choose_condition"
+            android:textSize="17sp"
+            android:textColor="#252525"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <com.view.TextViewPlus
+        android:text="@string/str_auto_on_off"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textColor="#333333"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:drawableRight="@mipmap/my_icon_right"
+        android:gravity="center_vertical"
+        app:right_width="6.5dp"
+        app:right_height="12dp"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <com.view.TextViewPlus
+        android:id="@+id/tv_countdown"
+        android:text="@string/str_time_point"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:drawableRight="@mipmap/my_icon_right"
+        android:gravity="center_vertical"
+        app:right_width="6.5dp"
+        app:right_height="12dp"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <com.view.TextViewPlus
+        android:id="@+id/tv_time_range"
+        android:text="@string/str_time_range"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:drawableRight="@mipmap/my_icon_right"
+        android:gravity="center_vertical"
+        app:right_width="6.5dp"
+        app:right_height="12dp"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <com.view.TextViewPlus
+        android:id="@+id/tv_device_add"
+        android:text="@string/str_device"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:drawableRight="@mipmap/my_icon_right"
+        android:gravity="center_vertical"
+        app:right_width="6.5dp"
+        app:right_height="12dp"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

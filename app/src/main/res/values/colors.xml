@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="line">#f8f8f8</color>
+    <color name="txt_black">#333333</color>
+    <color name="theme" >#fa4b00</color>
+    <color name="color_EFEFEF">#efefef</color>
+    <!--uCrop Activity-->
+    <color name="ucrop_color_toolbar">#EE5500</color>
+    <color name="ucrop_color_statusbar">#EE5500</color>
+    <color name="ucrop_color_title">#fff</color>
+    <color name="ucrop_color_widget">#000</color>
+    <color name="ucrop_color_widget_active">#EE5500</color>
+    <color name="ucrop_color_widget_background">#fff</color>
+    <color name="ucrop_color_widget_text">#000</color>
+    <color name="ucrop_color_progress_wheel_line">#808080</color>
+    <color name="ucrop_color_crop_background">#000</color>
+
+    <!--Crop View-->
+    <color name="ucrop_color_default_crop_grid">#80ffffff</color>
+    <color name="ucrop_color_default_crop_frame">#ffffff</color>
+    <color name="ucrop_color_default_dimmed">#8c000000</color>
+    <color name="theme_lines">#dddddd</color>
+    <color name="tv_444444">#444444</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_border">#ffafed44</color>
+    <color name="goods_details_sku">#f0eff4</color>
+    <color name="tv_gray">#666666</color>
+    <color name="tv_blue">#308BE9</color>
+    <color name="color_chat">#ed7600</color>
+    <color name="item_time_bg">#ffdac2</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_white_gray">#f9f9f9</color>
+    <color name="color_kg">#303a3b</color>
+    <color name="color_chazuo">#0093fa</color>
+
+    <!--长链接调试页面-ChannelActivity color start-->
+    <color name="channeldebug_pri_color">#00C1DE</color>
+    <color name="channeldebug_topbar_lefttextcolor">#47C1DF </color>
+    <color name="channeldebug_pri_dark_color">#18B4CD</color>
+    <color name="channeldebug_pri_unenable_color">#CCCCCC</color>
+    <color name="channeldebug_pri_unenable_bgcolor">#88FFFFFF</color>
+    <color name="channeldebug_bgcolor">#F0EFF1</color>
+    <color name="channeldebug_textcolor_normal">#333333</color>
+    <color name="channeldebug_color_connect">#33B14B</color>
+    <color name="channeldebug_textcolor_graytitle">#9B9B9B</color>
+    <color name="channeldebug_textcolor_hint">#999999</color>
+    <color name="color_9B9B9B">#9b9b9b</color>
+    <color name="color_8F8E94">#8F8E94</color>
+    <color name="color_C64D4D4D">#C64D4D4D</color>
+    <color name="color_ED001D">#ED001D</color>
+    <color name="color_1F6BC4">#1F6BC4</color>
+    <color name="text1">#333333</color>
+    <color name="text2">#555555</color>
+    <color name="split_line">#dddddd</color>
+    <color name="blue">#0093fa</color>
+    <color name="tv_666666">#666666</color>
+    <color name="black">#000000</color>
+    <color name="tv_999999">#999999</color>
+    <color name="tv_cccccc">#cccccc</color>
+    <!--长链接调试页面-ChannelActivity color end-->
+</resources>

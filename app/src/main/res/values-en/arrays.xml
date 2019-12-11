@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+
+
+    <string name="permission_get_accounts_hint">This function cannot be enabled without this permission. Please enable the permission.</string>
+    <string name="permission_read_phone_hint">This function cannot be enabled without this phone permission. Please enable the permission.</string>
+    <string name="permission_call_phone_hint">This function cannot be enabled without this phone permission. Please enable the permission.</string>
+    <string name="permission_camera_hint">This function cannot be turned on without the permission of this camera. Please turn on the permission.</string>
+    <string name="permission_access_fine_location_hint">This function cannot be enabled without this location permission. Please enable the permission.</string>
+    <string name="permission_access_coarse_location_hint">This function cannot be enabled without this location permission. Please enable the permission</string>
+    <string name="permission_read_external_hint">This function cannot be enabled without this SD card reading permission. Please enable the permission.</string>
+    <string name="permission_white_external_hint">This function cannot be enabled without this SD card reading permission. Please enable the permission.</string>
+    <string name="permission_recode_audio_hint">You do not have the recording permission to enable this function. Please enable the permission.</string>
+</resources>

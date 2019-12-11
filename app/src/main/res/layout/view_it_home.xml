@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.view.PMSwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_it"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.view.PMSwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_none_device"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:src="@mipmap/img_kb"
+            android:layout_width="102dp"
+            android:layout_height="132dp" />
+        <TextView
+            android:text="@string/str_have_no_devices"
+            android:textSize="16sp"
+            android:textColor="#999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_add_device"
+            android:text="@string/str_add_device"
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_corner_empty_666666_15"
+            android:layout_width="125dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</FrameLayout>

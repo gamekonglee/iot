@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aliyun.iot.demo.ipcview.activity.CardVideoActivity">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ipc_video_title_card"
+        />
+    <FrameLayout
+        android:id="@+id/video_view_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/card_video_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.opengl.GLSurfaceView
+                android:id="@+id/card_player_surface_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <ToggleButton
+                android:id="@+id/card_video_full_screen_tbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/full_screen_button"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textOn=""
+                android:textOff=""
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                >
+
+
+                <ToggleButton
+                    android:id="@+id/card_pause_resume_tbtn"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/selector_pause_resume"
+                    android:textOff=""
+                    android:textOn=""
+                    android:layout_centerVertical="true"
+                    />
+
+                <SeekBar
+                    android:id="@+id/card_player_seek_bar"
+                    style="@android:style/Widget.Holo.SeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:max="1000"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf= "@+id/card_pause_resume_tbtn"
+                    android:layout_toLeftOf= "@+id/card_duration_tv"/>
+
+                <TextView
+                    android:id="@+id/card_duration_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="-/-"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/card_video_buffering_bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminateDuration="1000"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ipc_history_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/hls_video_rl"
+        />
+</LinearLayout>

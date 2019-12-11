@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">IPCView</string>
+    <string name="ipc_confirm">确定</string>
+    <string name="ipc_cancle">取消</string>
+    <string name="ipc_delete">删除</string>
+    <string name="ipc_close">关闭</string>
+
+    <!--录像计划-->
+    <string name="ipc_reg_plan_unbind_fail">删除事件录像计划与设备关系失败，  code: %1$d      data:%2$s</string>
+    <string name="ipc_plan_all_day">全天</string>
+    <string name="ipc_plan_unbind">解除计划</string>
+    <string name="ipc_plan_update">更新计划</string>
+    <string name="ipc_plan_query_list_err_info">获取事件录像计划失败    e:</string>
+    <string name="ipc_plan_query_list_success">获取事件录像计划成功</string>
+    <string name="ipc_plan_match_fail">没有对应的事件录像计划   code:</string>
+    <string name="ipc_plan_query_list_err_code">获取事件录像计划失败    code:</string>
+    <string name="ipc_plan_none">设备无事件录像计划</string>
+    <string name="ipc_plan_set_err_info">设置失败，e:</string>
+    <string name="ipc_plan_set_success">设置成功</string>
+    <string name="ipc_plan_set_fail_data_null">设置失败,数据为空</string>
+    <string name="ipc_plan_set_fail_code">设置失败,code:</string>
+    <string name="ipc_plan_unbind_err_info">删除事件录像计划与设备关系失败，e:</string>
+    <string name="ipc_plan_unbind_success">删除事件录像计划与设备关系成功，data:</string>
+    <string name="ipc_plan_start_time">开始时间</string>
+    <string name="ipc_plan_end_time">结束时间</string>
+    <string name="ipc_plan_sunday">周天</string>
+    <string name="ipc_plan_monday">周一</string>
+    <string name="ipc_plan_tuesday">周二</string>
+    <string name="ipc_plan_wednesday">周三</string>
+    <string name="ipc_plan_thursday">周四</string>
+    <string name="ipc_plan_friday">周五</string>
+    <string name="ipc_plan_saturday">周六</string>
+    <string name="ipc_plan_unknow">未知</string>
+    <string name="ipc_plan_invalid_time">时间非法</string>
+
+    <!--直播-->
+    <string name="ipc_reg_main_first_frame_time">首帧耗时: %1$d ms</string>
+    <string name="ipc_main_warm_use_phone_traffic">正在使用手机流量，可能会产生费用</string>
+    <string name="ipc_main_definition_high">高清</string>
+    <string name="ipc_main_definition_normal">标清</string>
+    <string name="ipc_main_definition_low">流畅</string>
+    <string name="ipc_main_ptz_zoom_big">放大</string>
+    <string name="ipc_main_ptz_zoom_small">缩小</string>
+    <string name="ipc_main_function_four_screen">四分屏</string>
+    <string name="ipc_main_ptz_stop">停止</string>
+    <string name="ipc_main_ptz_right">→</string>
+    <string name="ipc_main_ptz_left_down">↙</string>
+    <string name="ipc_main_ptz_left">←</string>
+    <string name="ipc_main_ptz_down">↓</string>
+    <string name="ipc_main_ptz_left_up">↖</string>
+    <string name="ipc_main_ptz_right_up">↗</string>
+    <string name="ipc_main_ptz_right_down">↘</string>
+    <string name="ipc_main_ptz_up">↑</string>
+    <string name="ipc_main_ptz_success">转动成功</string>
+    <string name="ipc_main_ptz_fail">转动失败    o:</string>
+    <string name="ipc_main_can_intercom">可以开始说话了</string>
+    <string name="ipc_main_intercom_redio_err">录音机错误:</string>
+    <string name="ipc_main_intercom_close">语音对讲关闭</string>
+    <string name="ipc_main_record_fail">录制视频失败, 请确保已有内容播放</string>
+    <string name="ipc_main_record_err_io">无法写入</string>
+    <string name="ipc_main_record_success">视频录制成功</string>
+    <string name="ipc_main_record_save_path">存储在:</string>
+    <string name="ipc_main_record_play">播放录像</string>
+    <string name="ipc_main_record_save_fail">保存mp4文件失败</string>
+    <string name="ipc_main_snapshot_fail">无法截图，当前无画面</string>
+
+    <!--录像-->
+    <string name="ipc_video_title_card">设备端卡录像</string>
+    <string name="ipc_video_title_cloud">云端事件录像</string>
+    <string name="ipc_video_no_video">暂无视频</string>
+    <string name="ipc_video_choose_date">选择日期</string>
+    <string name="ipc_video_replay">重播</string>
+    <string name="ipc_video_record_fail">无法录像，当前无画面</string>
+    <string name="ipc_video_snapshot_fail">无法截图，当前无画面</string>
+    <string name="ipc_video_swip_to_section">请划动到标志时间段内播放</string>
+    <string name="ipc_video_not_connect">无法连接</string>
+    <string name="ipc_video_data_err">数据异常</string>
+    <string name="ipc_video_device_offline">设备离线</string>
+    <string name="ipc_video_permission_set">去设置</string>
+    <string name="ipc_video_permission_info_about_write_sd">您已禁用 \"读写手机存储\" 权限， 将影响拍照和录像功能,请在设置中授权！</string>
+    <string name="ipc_video_no_more">没有更多录像了</string>
+    <string name="ipc_video_play_not_encrypt">播放未加密录像</string>
+    <string name="ipc_video_play_encrypt">播放加密录像</string>
+
+    <!--图库-->
+    <string name="ipc_reg_album_select_count">已选择%d项</string>
+    <string name="ipc_reg_album_query_list_fail">获取照片列表失败，e:%1$s</string>
+    <string name="ipc_reg_album_delete_err_info">批量删除照片失败，e:%1$s</string>
+    <string name="ipc_album_reg_query_list_err_info">获取照片列表失败，code:%1$d   data:%2$s</string>
+    <string name="ipc_album_reg_delete_fail_code">批量删除照片失败，code:%1$d   msg:%2$s  %3$s</string>
+    <string name="ipc_album_title">查看图片</string>
+    <string name="ipc_album_choose_all">全选</string>
+    <string name="ipc_album_clear">清除</string>
+    <string name="ipc_album_refresh">更新</string>
+    <string name="ipc_album_no_more">已经没有更多数据了！</string>
+    <string name="ipc_album_swip_load_next">已经拖动至底部，再次拖动即可翻页</string>
+    <string name="ipc_album_del_dialog_title">提示</string>
+    <string name="ipc_album_del_dialog_msg_no_select">当前未选中项目</string>
+    <string name="ipc_album_del_dialog_msg_reconfirm">确认删除所选项目？</string>
+    <string name="ipc_album_query_list_null">获取照片列表成功：data为null</string>
+    <string name="ipc_album_delete_success">批量删除照片成功</string>
+    <string name="ipc_album_delete_part_success">批量删除部分照片成功</string>
+    <string name="ipc_album_delete_fail">批量删除照片失败</string>
+    <string name="ipc_album_delete_fail_null">批量删除照片失败：data为null</string>
+    <string name="ipc_album_select_one">已选择1项</string>
+
+
+    <!--设置-->
+    <string name="ipc_setting_reboot_success">重启指令发送成功</string>
+    <string name="ipc_setting_sd_normal">正常</string>
+    <string name="ipc_setting_sd_no">未插卡</string>
+    <string name="ipc_setting_sd_not_format">未格式化</string>
+    <string name="ipc_setting_sd_formatting">正在格式化</string>
+    <string name="ipc_setting_unbind_dialog_title">是否解绑设备？</string>
+    <string name="ipc_setting_unbind">解绑</string>
+    <string name="ipc_setting_unbind_err">解绑失败</string>
+    <string name="ipc_setting_unbind_success">解绑成功</string>
+    <string name="ipc_setting_function_developing">暂未开放此功能</string>
+
+    <!--对话框-->
+    <string name="ipc_dialog_snapshot_save">保存到相册</string>
+    <string name="ipc_dialog_url_request_err">请求失败</string>
+    <string name="ipc_dialog_title_pic">照片</string>
+    <string name="ipc_dialog_saved">已保存</string>
+    <string name="ipc_dialog_select_time">选择时间</string>
+
+</resources>

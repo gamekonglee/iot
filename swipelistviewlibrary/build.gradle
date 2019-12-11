@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release' //添加
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    provided fileTree(dir: 'libs', include: ['*.jar'])
+//    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+}
+
+//// 添加
+//publish {
+//    userOrg = 'yangxiaoge' //bintray.com用户名
+//    groupId = 'com.yjn' //jcenter上的路径
+//    artifactId = 'SwipeListViewLibrary' //项目名称
+//    publishVersion = '1.0.0' //版本号
+//    desc = 'hey, guays. This is my first repository. ' //描述，不重要
+//    website = 'https://github.com/yangxiaoge/SwipListView'//网站，不重要
+//}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageView
+        android:background="@mipmap/nav_left"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_width="10dp"
+        android:layout_height="20dp" />
+    <TextView
+        android:textSize="17sp"
+        android:textColor="#252525"
+        android:text="智能设置"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="保存"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/bg_corner_white_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            >
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:text="编辑名称"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:drawableRight="@mipmap/icon_editor"
+                android:drawablePadding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_img"
+                android:background="@mipmap/icon_photo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="就执行以下动作"
+                android:layout_margin="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_add_action"
+                android:layout_marginRight="25dp"
+                android:background="@mipmap/icon_tj"
+                android:layout_gravity="center_vertical"
+                android:layout_width="23dp"
+                android:layout_height="23dp" />
+        </LinearLayout>
+        
+
+
+    </LinearLayout>
+
+</LinearLayout>

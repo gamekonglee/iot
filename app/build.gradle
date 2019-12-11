@@ -1,0 +1,248 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.huawei.agconnect'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId 'com.juhao.home'
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 6
+        versionName "1.0.5"
+        multiDexEnabled true
+        resConfigs "en", "zh-rCN","ja","ru","ko"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+//            abiFilters "armeabi", "x86","armeabi-v7a"//过滤除 armeabi 和 x86 以外的 so 文件
+            abiFilters "arm64-v8a","armeabi-v7a","x86","x86_64"
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude "lib/arm64-v8a/librealm-jni.so"
+    }
+    signingConfigs {
+        config {
+            keyAlias 'com.juhao.home'
+            keyPassword '9fuhttqw7nsx5gpg'
+            storeFile file('bda272d9f95cf881.keystore')
+            storePassword 'tphntdtjqh9jfweg'
+        }
+        release{
+            keyAlias 'com.juhao.home'
+            keyPassword '9fuhttqw7nsx5gpg'
+            storeFile file('bda272d9f95cf881.keystore')
+            storePassword 'tphntdtjqh9jfweg'
+        }
+        debug{
+            keyAlias 'com.juhao.home'
+            keyPassword '9fuhttqw7nsx5gpg'
+            storeFile file('bda272d9f95cf881.keystore')
+            storePassword 'tphntdtjqh9jfweg'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            jni.srcDirs=[]
+        }
+    }
+    dexOptions{
+//使用增量模式构建
+//        incremental true
+//最大堆内存
+        javaMaxHeapSize "8g"
+//是否支持大工程模式
+        jumboMode=true
+//预编译
+        preDexLibraries=true
+//线程数
+        threadCount=8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+//applicationVariants.all { variant ->
+//    if (variant.buildType.name != "debug") {
+//        variant.getPackageApplicationProvider().get().outputDirectory = new File(project.rootDir.absolutePath + "/apk")
+//    }
+//
+//    variant.getPackageApplicationProvider().get().outputScope.apkDatas.forEach { apkData ->
+//        apkData.outputFileName = ((project.name != "app") ? project.name : rootProject.name) + "-" +
+//                variant.versionName + "_" +
+//                variant.flavorName + "_" +
+//                variant.buildType.name +
+//                ".apk"
+//    }
+//}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+
+    mavenLocal()
+
+    maven {
+        url "http://maven.aliyun.com/nexus/content/repositories/releases"
+    }
+
+    maven {
+        url "http://maven.aliyun.com/nexus/content/repositories/snapshots"
+    }
+
+    jcenter()
+
+    google()
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.yanzhenjie:permission:1.1.0'
+
+    implementation files('libs/universalimageloader.jar')
+    implementation(name: 'AkHttp', ext: 'aar')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation 'com.yanzhenjie:permission:1.1.0'
+    // Dependency for Google Sign-In
+//    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.bigkoo:alertview:1.0.3'
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+    implementation 'com.github.donkingliang:ImageSelector:1.6.0'
+ /*
+    implementation 'com.aliyun.alink.linksdk:ble-library:1.2.3'
+    *//* Bone Mobile 容器.begin *//*
+    implementation('com.aliyun.iot.aep.page:rn:0.1.8') {
+        exclude module: 'okhttp-ws'
+//        exclude module: 'com.facebook.react'
+//        exclude group:'com.aliyun.iot.aep.sdk', module:'rn-external-fresco' //移除Fresco的依赖
+    }
+//    implementation ('com.aliyun.iot.aep.sdk:rn-external-fresco:0.41.2.20180331'){
+//        exclude module: 'okhttp-ws'
+//        exclude group: 'com.facebook.react'
+//    }
+    implementation 'com.aliyun.alink.linksdk:breeze-ota:1.2.2'
+    implementation 'com.aliyun.alink.linksdk:public-channel-gateway:1.6.1'
+    implementation 'com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1'
+    implementation ('com.aliyun.alink.linksdk:ilop-devicecenter:1.6.8.5'){
+        transitive = true
+    }
+    implementation 'com.aliyun.alink.linksdk:public-tmp-ext-boneplugin:1.4.5.3'
+    implementation 'com.aliyun.iot.aep.sdk:connectchannel:0.0.6'
+    *//* AEP自有SDK.begin *//*
+    implementation 'com.aliyun.iot.aep.sdk:sdk-framework:0.0.4.4@aar'
+    implementation 'com.aliyun.iot.aep.sdk:threadpool:0.0.3@aar'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation('com.aliyun.iot.ilop.page:scan:0.0.1') {
+        exclude module: 'annotations-java5'
+    }
+    *//* 其他.begin *//*
+    implementation 'com.google.android:flexbox:0.3.1'
+    implementation 'com.taobao.external:eventbus:1.0.2'
+    implementation 'com.aliyun.iot.aep.sdk:abus:0.0.1'
+
+    implementation('com.aliyun.iotx:linkvisual-media:1.2.3.2')
+    implementation('com.facebook.android:facebook-android-sdk:4.20.0')
+
+//    implementation 'com.facebook.fresco:fresco:0.14.1'
+
+    implementation  "com.facebook.react:react-native:+"
+
+
+    implementation 'com.aliyun.iot.aep.sdk:push:0.0.3'
+
+    implementation 'com.aliyun.alink.linksdk:api-client-biz:1.0.0'*/
+
+    implementation 'com.aliyun.iot.sdk:account-oa-ui:0.0.6'
+    implementation 'com.aliyun.ams:alicloud-android-utdid:1.1.5.4'
+    implementation 'com.aliyun.ams:alicloud-android-ut:5.1.0'
+    implementation 'com.aliyun.iot.aep.sdk:apiclient:0.0.8.2'
+    implementation 'com.aliyun.alink.linksdk:api-client-biz:1.0.0'
+    implementation 'com.aliyun.iot.aep.sdk:account:0.0.2.3'
+    implementation 'com.aliyun.iot.aep.sdk:iot-credential:0.0.2.2'
+    implementation 'com.aliyun.alink.linksdk:lpbs-plugin-breeze:1.1.0.1'
+    implementation 'com.aliyun.alink.linksdk:breeze:1.2.10'
+    implementation 'com.aliyun.alink.linksdk:breeze-biz:1.1.3'
+    implementation 'com.aliyun.alink.linksdk:ble-library:1.2.4'
+    implementation 'com.aliyun.iot.aep.page:rn:0.1.8'
+    implementation 'com.aliyun.alink.linksdk:breeze-ota:1.2.2'
+    implementation 'com.aliyun.alink.linksdk:public-channel-gateway:1.6.1'
+    implementation 'com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1'
+    implementation 'com.aliyun.alink.linksdk:ilop-devicecenter:1.6.8.5'
+    implementation 'com.aliyun.alink.linksdk:public-tmp-ext-boneplugin:1.4.5.3'
+    implementation 'com.aliyun.iot.aep.sdk:push:0.0.3'
+    implementation 'com.aliyun.iot.aep.sdk:connectchannel:0.0.6'
+
+//
+    implementation 'com.aliyun.iot.aep.sdk:jsbridge-external:0.1.2.1'
+
+    implementation 'com.aliyun.iot.aep.sdk:rncontainer:0.59.8.20190909.1'
+
+
+    implementation('com.aliyun.iot.aep.sdk:jsbridge:0.1.2'){
+        force=true
+    }
+    implementation 'com.pgyersdk:sdk:2.8.1'
+//    compile 'com.aliyun.iot.sdk:account-oa-ui:0.0.5'
+//    compile 'com.aliyun.ams:alicloud-android-utdid:1.1.5.4'
+//    compile 'com.aliyun.ams:alicloud-android-ut:5.1.0'
+//    compile 'com.aliyun.iot.aep.sdk:apiclient:0.0.7'
+//    compile 'com.aliyun.alink.linksdk:api-client-biz:1.0.0'
+//    compile 'com.aliyun.iot.aep.sdk:account:0.0.2.3'
+//    compile 'com.aliyun.iot.aep.sdk:iot-credential:0.0.2.2'
+//    compile 'com.aliyun.iot.aep.page:rn:0.1.2.15'
+//    compile ('com.aliyun.iot.aep.sdk:rn-external-fresco:0.41.2.20180331'){
+////        exclude group:'com.facebook.react'
+//    }
+//    compile 'com.aliyun.iot.sdk:svg:0.0.1'
+//    compile 'com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1'
+//    compile ('com.aliyun.alink.linksdk:ilop-devicecenter:1.6.7.2'){
+//        transitive = true
+//    }
+//    compile 'com.aliyun.alink.linksdk:public-tmp-ext-boneplugin:1.4.5.3'
+//    compile 'com.aliyun.iot.aep.sdk:push:0.0.3'
+//    compile 'com.aliyun.iot.aep.sdk:connectchannel:0.0.6'
+
+
+
+
+    implementation 'com.aliyun.iot.aep.sdk:sdk-framework:0.0.4.4@aar'
+//    implementation('com.aliyun.iot.ilop.page:scan:0.0.1') {
+//        exclude module: 'annotations-java5'
+//    }
+    implementation('com.aliyun.iotx:linkvisual-media:1.2.3.2')
+    implementation 'com.google.android:flexbox:0.3.1'
+    implementation 'com.taobao.external:eventbus:1.0.2'
+    implementation 'com.aliyun.iot.aep.sdk:abus:0.0.1'
+//    api('com.facebook.android:facebook-android-sdk:4.20.0')
+    implementation 'com.huawei.hms:push:3.0.0.303'
+
+    implementation project(path: ':handygridview')
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation project(path: ':swipelistviewlibrary')
+    implementation project(path: ':ipcview')
+//    implementation project(path: ':linkvisualapi')
+}
+

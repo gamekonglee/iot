@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg_lock_2"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+<RelativeLayout
+    android:layout_width="50dp"
+    android:layout_height="match_parent"
+    android:onClick="goBack">
+    <ImageView
+        android:layout_centerInParent="true"
+        android:background="@mipmap/fh"
+        android:layout_width="10dp"
+        android:layout_height="20dp" />
+</RelativeLayout>
+    <TextView
+        android:text="门锁"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/icon_edi"
+        android:layout_width="20dp"
+        android:layout_height="19dp" />
+</RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.view.FontIconView
+            android:id="@+id/iv_battery"
+            android:text="@string/icon_battery_high"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_battery"
+            android:text="高"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_msg_1"
+            android:text="门铃关闭"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg_corner_full_trans_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_msg_2"
+            android:text="已关闭"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_corner_full_trans_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_msg_3"
+            android:text="未知"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_corner_full_trans_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_lock"
+        android:background="@mipmap/img_ms"
+        android:layout_centerInParent="true"
+        android:layout_width="240dp"
+        android:layout_height="240dp" />
+        <LinearLayout
+            android:background="#80596475"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <com.view.TextViewPlus
+                android:id="@+id/tv_baojing"
+                android:text="报警"
+                android:textColor="#ffffff"
+                android:textSize="9sp"
+                android:drawableTop="@mipmap/tab_icon_bj"
+                app:top_width="38dp"
+                app:top_height="28dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <com.view.TextViewPlus
+                android:id="@+id/tv_kaisuo"
+                android:text="开锁"
+                android:textColor="#ffffff"
+                android:textSize="9sp"
+                android:drawableTop="@mipmap/tab_icon_ks"
+                app:top_width="38dp"
+                app:top_height="28dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <com.view.TextViewPlus
+                android:visibility="gone"
+                android:id="@+id/tv_linshimima"
+                android:text="临时密码"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:drawableTop="@mipmap/tab_icon_lsmm"
+                app:top_width="38dp"
+                app:top_height="28dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

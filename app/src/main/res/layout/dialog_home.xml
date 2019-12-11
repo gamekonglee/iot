@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <ListView
+        android:id="@+id/lv_home_mates"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+        <View
+            android:background="#dddddd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <com.view.TextViewPlus
+            android:id="@+id/tv_mate_setting"
+            android:drawableLeft="@mipmap/icon_management"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/str_family_management"
+            android:drawablePadding="10dp"
+            android:textSize="15sp"
+            android:textColor="#252525"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+</LinearLayout>

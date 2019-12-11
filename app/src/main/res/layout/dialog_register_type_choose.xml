@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg_corner_white_5"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="请选择注册方式"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_china"
+        android:paddingLeft="15dp"
+        android:text="手机注册"
+        android:textColor="#333333"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:background="#dddddd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_oversea"
+        android:text="邮箱注册"
+        android:paddingLeft="15dp"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:background="#dddddd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

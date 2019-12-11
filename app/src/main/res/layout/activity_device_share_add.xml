@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:onClick="goBack">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:background="@mipmap/nav_left"
+            android:layout_width="10dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        android:text=""
+        android:textColor="#252525"
+        android:textSize="17sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.yjn.swipelistview.swipelistviewlibrary.widget.SwipeMenuListView
+                android:id="@+id/lv_devices_sharers"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:background="#f8f8f8"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <TextView
+        android:id="@+id/tv_share_add"
+        android:gravity="center"
+        android:text="@string/str_add_share"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+        android:textColor="#fa4b00"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

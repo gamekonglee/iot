@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="video_repaly" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ipc_hint_replay_bg</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+
+    <style name="custom_seekbar">
+        <item name="android:maxHeight">2dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/ipc_seekbar_line</item>
+        <item name="android:minHeight">1dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:thumb">@drawable/ipc_seekbar_thumb</item>
+    </style>
+</resources>

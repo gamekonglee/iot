@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#dddddd"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="goBack">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@mipmap/nav_left"
+                android:layout_width="10dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <TextView
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_corner_white_8"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:text="@string/str_input_home_wifi"
+            android:textSize="27sp"
+            android:textColor="#252525"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@mipmap/img_wifi_tips"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:layout_width="140dp"
+            android:layout_height="112dp" />
+        <TextView
+            android:text="@string/str_only_support_24g"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            android:layout_marginTop="280dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:background="@mipmap/icon_wifi"
+                    android:layout_width="19dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"/>
+                <EditText
+                    android:id="@+id/et_wifi"
+                    android:hint="wifi"
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:textColor="#252525"
+                    android:textSize="15sp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_marginLeft="50dp"/>
+                <com.view.FontIconView
+                    android:id="@+id/tv_change_wifi"
+                    android:text="@string/icon_wifi_change"
+                    android:textColor="#bcbcbc"
+                    android:textSize="16sp"
+                    android:layout_marginRight="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:background="#dddddd"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:background="@mipmap/icon_mm"
+                    android:layout_width="16dp"
+                    android:layout_height="19dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"/>
+                <EditText
+                    android:id="@+id/et_pwd"
+                    android:hint="@string/str_pwd"
+                    android:textSize="15sp"
+                    android:textColorHint="#999999"
+                    android:paddingLeft="15dp"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_marginLeft="50dp"/>
+                <com.view.FontIconView
+                    android:id="@+id/tv_cansee"
+                    android:textColor="#bcbcbc"
+                    android:textSize="11sp"
+                    android:text="@string/icon_can_not_see"
+                    android:layout_marginRight="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="14dp" />
+                <View
+                    android:background="#dddddd"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_ensure"
+                android:text="@string/str_ensure"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="@drawable/bg_corner_full_orange_10"
+                android:layout_width="match_parent"
+                android:layout_margin="25dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

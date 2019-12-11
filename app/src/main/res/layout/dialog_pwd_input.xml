@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:layout_height="400dp">
+
+    <TextView
+        android:text="请输入开锁密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_pwd_input"
+        android:layout_margin="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_ensure"
+        android:text="确定"
+        android:background="@drawable/bg_corner_full_orange_10"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

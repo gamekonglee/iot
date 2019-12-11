@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aliyun.iot.demo.ipcview.activity.PictureTestActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pic_test_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:text="@string/ipc_cancle"
+            />
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="@string/ipc_album_title"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:id="@+id/bt_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ipc_album_choose_all"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            />
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ipc_album_clear"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            />
+        <Button
+            android:id="@+id/bt_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ipc_album_refresh"
+            android:background="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/rule"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_pic_test_header"
+        android:background="@android:color/darker_gray"  />
+
+
+    <GridView
+        android:id="@+id/gv_pic"
+        android:layout_below="@+id/rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:layout_above="@+id/bt_del"
+        >
+
+    </GridView>
+
+    <Button
+        android:id="@+id/bt_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ipc_delete"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

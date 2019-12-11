@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f8f8f8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<View
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"/>
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:onClick="goBack">
+            <ImageView
+                android:background="@mipmap/nav_left"
+                android:layout_centerInParent="true"
+                android:layout_width="10dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <TextView
+            android:text="家庭管理"
+            android:textColor="#252525"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="#dddddd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/lv_home_mates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:background="#ffffff"
+        android:id="@+id/tv_add_home"
+        android:text="添加家庭"
+        android:textColor="#fa4b00"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

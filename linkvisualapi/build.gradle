@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        releaseOversea {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debugOversea {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    /* API 通道.begin */
+    implementation 'com.aliyun.iot.aep.sdk:apiclient:0.0.8.2'
+    /* API 通道.end*/
+
+    /* 长连接.begin*/
+    implementation('com.aliyun.iot.aep.sdk:connectchannel:0.0.6')
+    /* 长连接.end*/
+
+    // 设备模型 SDK
+    implementation 'com.aliyun.alink.linksdk:public-tmp-ext-boneplugin:1.4.5.5'
+}

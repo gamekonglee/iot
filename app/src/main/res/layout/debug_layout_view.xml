@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/about_topbar_view"
+        layout="@layout/topbar_layout_view" />
+
+    <RelativeLayout
+        android:background="#50000000"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/light_icon"
+            android:layout_centerVertical="true"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/light_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="当前API Level : 3"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/sdk_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</merge>

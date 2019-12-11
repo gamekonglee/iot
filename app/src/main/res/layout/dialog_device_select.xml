@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg_corner_white_15_top"
+    android:layout_height="match_parent">
+<TextView
+    android:text="@string/str_deivce_select"
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <View
+        android:background="#e4e4e4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <GridView
+        android:id="@+id/gv_device"
+        android:numColumns="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

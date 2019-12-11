@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#dddddd"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:onClick="goBack">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@mipmap/nav_left"
+                android:layout_width="10dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <TextView
+            android:text=""
+            android:textSize="17sp"
+            android:textColor="#252525"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_corner_white_15"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp">
+        <TextView
+            android:text="添加设备"
+            android:textColor="#252525"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_tips1"
+            android:text="接通电源，确定指示灯在快闪"
+            android:layout_margin="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:id="@+id/iv_img"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_upset_device"
+            android:text="@string/str_upset_device"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_ensure"
+            android:text="@string/str_make_sure_light_on"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/bg_corner_full_orange_10"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

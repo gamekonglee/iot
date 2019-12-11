@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--时间尺控件-->
+    <declare-styleable name="TimeRulerView">
+        <!--刻度颜色-->
+        <attr name="ipc_gradationColor" format="reference|color" />
+        <!--刻度宽度-->
+        <attr name="ipc_gradationWidth" format="dimension|reference" />
+        <!--刻度数值颜色-->
+        <attr name="ipc_gradationTextColor" format="color|reference" />
+        <!--刻度数值大小-->
+        <attr name="ipc_gradationTextSize" format="dimension|reference" />
+        <!--秒刻度的长度-->
+        <attr name="ipc_secondLen" format="dimension|reference" />
+        <!--分刻度的长度-->
+        <attr name="ipc_minuteLen" format="dimension|reference" />
+        <!--时刻度的长度-->
+        <attr name="ipc_hourLen" format="dimension|reference" />
+        <!--当前时间，单位：s-->
+        <attr name="ipc_currentTime" format="integer|reference" />
+        <!--中间指针线颜色-->
+        <attr name="ipc_indicatorLineColor" format="reference|color"/>
+        <!--中间指针线宽度-->
+        <attr name="ipc_indicatorLineWidth" format="reference|dimension"/>
+        <!--时间块的颜色-->
+        <attr name="ipc_partColor" format="color|reference" />
+    </declare-styleable>
+</resources>

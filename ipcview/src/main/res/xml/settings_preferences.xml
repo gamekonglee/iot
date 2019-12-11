@@ -1,0 +1,188 @@
+<PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceScreen
+        android:key="video_voice"
+        android:persistent="false"
+        android:title="@string/video_voice_title"
+        android:widgetLayout="@layout/setting_pref_widget_more">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/mic_switch_key"
+            android:title="@string/mic_switch_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/speaker_switch_key"
+            android:title="@string/speaker_switch_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/status_light_switch_key"
+            android:title="@string/status_light_switch_title" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/day_night_mode_title"
+            android:entries="@array/DayNightMode"
+            android:entryValues="@array/DayNightModeValue"
+            android:key="@string/day_night_mode_key"
+            android:summary="@string/day_night_mode_sum"
+            android:title="@string/day_night_mode_title"
+            android:widgetLayout="@layout/setting_pref_widget_more"/>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/stream_video_quality_title"
+            android:entries="@array/StreamVideoQuality"
+            android:entryValues="@array/StreamVideoQualityValue"
+            android:key="@string/stream_video_quality_key"
+            android:summary="@string/stream_video_quality_sum"
+            android:title="@string/stream_video_quality_title"
+            android:widgetLayout="@layout/setting_pref_widget_more"/>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/subStream_video_quality_title"
+            android:entries="@array/SubStreamVideoQuality"
+            android:entryValues="@array/SubStreamVideoQualityValue"
+            android:key="@string/subStream_video_quality_key"
+            android:summary="@string/subStream_video_quality_sum"
+            android:title="@string/subStream_video_quality_title"
+            android:widgetLayout="@layout/setting_pref_widget_more"/>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/image_flip_status_title"
+            android:entries="@array/ImageFlipState"
+            android:entryValues="@array/ImageFlipStateValue"
+            android:key="@string/image_flip_status_key"
+            android:summary="@string/image_flip_status_title"
+            android:title="@string/image_flip_status_title"
+            android:widgetLayout="@layout/setting_pref_widget_more"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/encrypt_switch_key"
+            android:title="@string/encrypt_switch_title" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/force_iframe_key"
+            android:title="@string/force_iframe_title" />
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="alarm"
+        android:persistent="false"
+        android:title="@string/alarm_title"
+        android:widgetLayout="@layout/setting_pref_widget_more">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/alarm_switch_key"
+            android:title="@string/alarm_switch_title" />
+
+
+        <ListPreference
+            android:dependency="alarm_switch"
+            android:defaultValue="0"
+            android:dialogTitle="@string/motion_detect_sensitivity_sum"
+            android:entries="@array/MotionDetectSensitivity"
+            android:entryValues="@array/MotionDetectSensitivityValue"
+            android:key="@string/motion_detect_sensitivity_key"
+            android:summary="@string/motion_detect_sensitivity_sum"
+            android:title="@string/motion_detect_sensitivity_title"
+            android:widgetLayout="@layout/setting_pref_widget_more"
+            />
+
+        <ListPreference
+            android:dependency="alarm_switch"
+            android:defaultValue="0"
+            android:dialogTitle="@string/voice_detect_sensitivity_title"
+            android:entries="@array/VoiceDetectionSensitivity"
+            android:entryValues="@array/VoiceDetectionSensitivityValue"
+            android:key="@string/voice_detect_sensitivity_key"
+            android:summary="@string/voice_detect_sensitivity_sum"
+            android:title="@string/voice_detect_sensitivity_title"
+            android:widgetLayout="@layout/setting_pref_widget_more"
+            />
+
+        <ListPreference
+            android:dependency="alarm_switch"
+            android:defaultValue="0"
+            android:dialogTitle="@string/alarm_frequency_level_title"
+            android:entries="@array/AlarmFrequencyLevel"
+            android:entryValues="@array/AlarmFrequencyLevelValue"
+            android:key="@string/alarm_frequency_level_key"
+            android:summary="@string/alarm_frequency_level_sum"
+            android:title="@string/alarm_frequency_level_title"
+            android:widgetLayout="@layout/setting_pref_widget_more"/>
+
+        <Preference
+            android:dependency="alarm_switch"
+            android:key="@string/alarm_notify_settings_key"
+            android:persistent="false"
+            android:summary="@string/alarm_notify_setting_sum"
+            android:title="@string/alarm_notify_setting_title"
+            android:widgetLayout="@layout/setting_pref_widget_more">
+        </Preference>
+
+    </PreferenceScreen>
+
+    <Preference
+        android:key="@string/event_record_time_settings_key"
+        android:persistent="false"
+        android:summary="@string/event_record_time_setting_sum"
+        android:title="@string/event_record_time_setting_title"
+        android:widgetLayout="@layout/setting_pref_widget_more">
+    </Preference>
+
+    <PreferenceScreen
+        android:key="card"
+        android:persistent="false"
+        android:title="@string/card_title"
+        android:widgetLayout="@layout/setting_pref_widget_more">
+
+        <Preference
+            android:key="@string/storage_status_key"
+            android:title="@string/storage_status_title" />
+        <Preference
+            android:key="@string/storage_total_capacity_key"
+            android:title="@string/storage_total_capacity_title" />
+        <Preference
+            android:key="@string/storage_remain_capacity_key"
+            android:title="@string/storage_remaining_capacity_title" />
+
+        <ListPreference
+            android:dependency="storage_status"
+            android:defaultValue="0"
+            android:dialogTitle="@string/storage_record_mode_title"
+            android:entries="@array/StorageRecordMode"
+            android:entryValues="@array/StorageRecordModeValue"
+            android:key="@string/storage_record_mode_key"
+            android:summary="@string/storage_record_mode_sum"
+            android:title="@string/storage_record_mode_title"
+            android:widgetLayout="@layout/setting_pref_widget_more"/>
+
+        <Preference
+            android:key="@string/storage_format_key"
+            android:persistent="false"
+            android:summary="@string/storage_format_sum"
+            android:title="@string/storage_format_title"
+            android:widgetLayout="@layout/setting_pref_widget_more">
+        </Preference>
+
+    </PreferenceScreen>
+
+    <Preference
+        android:key="@string/unbind_key"
+        android:persistent="false"
+        android:title="@string/unbind_title">
+    </Preference>
+    <Preference
+        android:key="@string/reboot_key"
+        android:persistent="false"
+        android:title="@string/reboot_title">
+    </Preference>
+
+
+</PreferenceScreen>

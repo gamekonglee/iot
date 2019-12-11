@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f7f7f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <RelativeLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            >
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:onClick="goBack">
+                <ImageView
+                    android:src="@mipmap/nav_left"
+                    android:layout_centerInParent="true"
+                    android:layout_width="11dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+            <TextView
+                android:text="定时"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <TextView
+            android:text="定时可能会存在30秒左右的误差"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.view.PMSwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.view.EndOfListView
+                android:id="@+id/lv_count_down"
+                android:background="#ffffff"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.view.PMSwipeRefreshLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_add_count_down"
+        android:text="添加定时"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_corner_full_orange_10"
+        android:layout_height="40dp" />
+
+</FrameLayout>
