@@ -100,8 +100,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.multidex:multidex-instrumentation:2.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/gamekonglee/Downloads/GkleeProject/iotjuhao/app/libs/BaiduLBS_Android.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/gamekonglee/Downloads/GkleeProject/iotjuhao/app/libs/universalimageloader.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/gamekonglee/Downloads/GkleeProject/iot/app/libs/BaiduLBS_Android.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/gamekonglee/Downloads/GkleeProject/iot/app/libs/universalimageloader.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.collection:collection:1.0.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.0.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.0.0@jar" level="project" />
@@ -249,9 +249,6 @@
     <orderEntry type="library" name="Gradle: com.huawei.hms:network-grs:1.0.9.302@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.huawei.hms:network-common:1.0.9.302@aar" level="project" />
     <orderEntry type="library" name="Gradle: :AkHttp:@aar" level="project" />
-    <orderEntry type="module" module-name="ipcview" />
-    <orderEntry type="module" module-name="handygridview" />
-    <orderEntry type="module" module-name="swipelistviewlibrary" />
     <orderEntry type="module" module-name="ipcview" />
     <orderEntry type="module" module-name="handygridview" />
     <orderEntry type="module" module-name="swipelistviewlibrary" />

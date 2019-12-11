@@ -1,0 +1,4 @@
+# Referenced at /Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:71
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:71
+-keep class com.aliyun.iot.ilop.demo.DemoApplication { <init>(); }

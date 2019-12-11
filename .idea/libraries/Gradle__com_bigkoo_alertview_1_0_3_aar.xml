@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.bigkoo:alertview:1.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ee9ae0ed3629a0c15bf972a48caf3b96/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ee9ae0ed3629a0c15bf972a48caf3b96/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bigkoo/alertview/1.0.3/8029441be5daf96b50e0709729d8229a31276c79/alertview-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

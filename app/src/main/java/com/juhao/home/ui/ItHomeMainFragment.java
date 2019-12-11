@@ -163,6 +163,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
     private MainActivity mainActivity;
     private Mybc mybc;
     private View mViewContent;
+    private boolean hasData;
 
     @Override
     protected void initController() {
@@ -198,6 +199,15 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
         }
         return mViewContent;
     }
+    Runnable runnable=new Runnable() {
+        @Override
+        public void run() {
+            if(!hasData){
+                listByAccount();
+                mHandler.postDelayed(runnable,2000);
+            }
+        }
+    };
     @Override
     public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
@@ -255,7 +265,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                 LogUtils.logE("onevent_list", "listbyaccount");
 //                DemoApplication.has_got=true;
                 //处理逻辑
-                listByAccount();
+                mHandler.postDelayed(runnable,1000);
             }
         }
     }
@@ -898,10 +908,6 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
         IoTRequest request = builder.build();
 
         IoTAPIClient ioTAPIClient = new IoTAPIClientFactory().getClient();
-//        if(pms==null||pms.size()==0){
-//            pms.add(null);
-//        }
-//        final PMSwipeRefreshLayout temp=pms.get(currentPosition);
         ioTAPIClient.send(request, new IoTCallback() {
             @Override
             public void onFailure(IoTRequest ioTRequest, Exception e) {
@@ -962,6 +968,8 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                             });
                     return;
                 }
+                hasData = true;
+                mHandler.removeCallbacksAndMessages(null);
                 Object data = response.getData();
                 if (null != data) {
                     if(data instanceof JSONObject){

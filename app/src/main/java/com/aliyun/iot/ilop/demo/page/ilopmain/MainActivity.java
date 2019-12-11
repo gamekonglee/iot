@@ -605,7 +605,7 @@ public class MainActivity extends FragmentActivity {
             if(!DemoApplication.is_created_fragment){
                 handler.postDelayed(runnable,500);
             }else {
-                handler.sendEmptyMessage(0);
+                handler.sendEmptyMessage(2000);
             }
         }
     };

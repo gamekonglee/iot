@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/handygridview/handygridview.iml" filepath="$PROJECT_DIR$/handygridview/handygridview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iot.iml" filepath="$PROJECT_DIR$/iot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ipcview/ipcview.iml" filepath="$PROJECT_DIR$/ipcview/ipcview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linkvisualapi/linkvisualapi.iml" filepath="$PROJECT_DIR$/linkvisualapi/linkvisualapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipelistviewlibrary/swipelistviewlibrary.iml" filepath="$PROJECT_DIR$/swipelistviewlibrary/swipelistviewlibrary.iml" />
+    </modules>
+  </component>
+</project>

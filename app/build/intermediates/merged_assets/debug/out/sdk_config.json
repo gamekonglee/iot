@@ -1,0 +1,39 @@
+[
+  {
+    "name": "DownstreamConnector",
+    "version": "0.0.1",
+    "description": "长链通道",
+    "initializerClass": "com.aliyun.iot.aep.sdk.delegate.DownstreamConnectorSDKDelegate",
+    "initializedInUIThread": false,
+    "needIoTToken": false,
+    "opts": {}
+  },
+  {
+    "name": "rncontainer",
+    "version": "0.0.1",
+    "description": "rn容器",
+    "initializerClass": "com.aliyun.iot.aep.sdk.delegate.RNContainerComponentDelegate",
+    "initializedInUIThread": true,
+    "process": "",
+    "needIoTToken": false,
+    "opts": {}
+  },
+  {
+    "name": "DeviceCenter",
+    "version": "0.0.1",
+    "description": "配网 SDK",
+    "initializerClass": "com.aliyun.iot.aep.sdk.delegate.DeviceCenterSDKDelegate",
+    "initializedInUIThread": false,
+    "needIoTToken": false,
+    "opts": {}
+  },
+  {
+    "name": "ThingModule",
+    "version": "0.0.1",
+    "description": "设备模型 SDK",
+    "initializerClass": "com.aliyun.iot.aep.sdk.delegate.ThingModuleSDKDelegate",
+    "initializedInUIThread": true,
+    "needIoTToken": false,
+    "opts": {}
+  }
+]

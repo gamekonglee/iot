@@ -1,0 +1,53 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "map": [
+                {
+                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/799ff7ec9a0a6314275251633d4574fc/res/values-zh/values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,104,219,319,368,419,489",
+                        "endColumns": "48,114,99,48,50,69,72",
+                        "endOffsets": "99,214,314,363,414,484,557"
+                    },
+                    "to": {
+                        "startLines": "14,15,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "879,928,1043,1143,1192,1243,1313",
+                        "endColumns": "48,114,99,48,50,69,72",
+                        "endOffsets": "923,1038,1138,1187,1238,1308,1381"
+                    }
+                },
+                {
+                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/7dbec5b14966d197e4bf47bbd308983c/res/values-zh/values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,137,223,298",
+                        "endColumns": "81,85,74,77",
+                        "endOffsets": "132,218,293,371"
+                    }
+                },
+                {
+                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/res/values-zh/values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,126,177,256,321,368,432,498",
+                        "endColumns": "70,50,78,64,46,63,65,59",
+                        "endOffsets": "121,172,251,316,363,427,493,553"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "376,447,498,577,642,689,753,819",
+                        "endColumns": "70,50,78,64,46,63,65,59",
+                        "endOffsets": "442,493,572,637,684,748,814,874"
+                    }
+                }
+            ]
+        }
+    ]
+}
